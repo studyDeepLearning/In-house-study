@@ -147,7 +147,7 @@ public int addAll(int[] ary) {
 
 ★参考文献  
 [2] [関数型プログラミングで行こう 〜 みんな大好きJavaから入る関数型の入り口の入り口](http://tercel-tech.hatenablog.com/entry/2014/12/29/173711)  
-[3][関数型プログラミングの威力を知ろう-後編](https://blog.codecamp.jp/function-programming-2)
+[3] [関数型プログラミングの威力を知ろう-後編](https://blog.codecamp.jp/function-programming-2)
 
 ## そんなにメリットだらけならJavaでも関数型プログラミングを導入すればいいじゃない！
 
