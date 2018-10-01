@@ -191,6 +191,7 @@ public interface Example {
 </br>
 </br>
 </br>
+
 **え？**
 
 どこが関数っぽいの？と感じたのではないかと思います。
