@@ -196,3 +196,38 @@ public interface Example {
 
 どこが関数っぽいの？と感じたのではないかと思います。  
 まあまあ、それは使ってみればわかるってことで、実際にプログラムを書いてみましょう。
+
+メソッドの引数に関数オブジェクト（関数型インターフェース）を渡す場合、「**匿名内部クラス**」の書き方を用います。
+
+```java
+// 関数型インターフェース
+@FunctionalInterface
+public interface Calc {
+    public int add(int x, int y);    // 抽象メソッド（SAM）
+}
+
+// printメソッドの実装
+private void print(int x, int y, Calc c) {
+    System.out.println(c.add(x, y));
+}
+
+// printメソッドの呼び出し
+print(3, 4, new Calc() {
+    @Override
+    public int add(int x, int y) {
+        return x + y;
+    }
+});
+
+// 実行結果　7
+```
+
+以上のように、匿名内部クラスを用いることで、関数型インターフェース Calc をインスタンス化するとともに、抽象メソッド add を実装して引数に渡すことができています。
+
+</br>
+</br>
+
+
+**え？**
+
+全然記述量少なくないし、関数型プログラミング感ないじゃん！！
