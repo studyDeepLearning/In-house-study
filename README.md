@@ -248,7 +248,7 @@ print(3, 4, new Calc() {
 
 ```java
 // printメソッドの呼び出し
-print(3, 4, (n, m) -> n + m);
+print(3, 4, (x, y) -> x + y);
 ```
 
 なんか短くなりましたね。  
