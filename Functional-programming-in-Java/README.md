@@ -252,15 +252,6 @@ print(3, 4, new Calc() {
 ```java
 // printメソッドの呼び出し
 print(3, 4, (x, y) -> x + y);
-
-
-// 省略前
-print(3, 4, new Calc() {
-    @Override
-    public int add(int x, int y) {
-        return x + y;
-    }
-});
 ```
 
 おお、なんかすごく短くなった！  
