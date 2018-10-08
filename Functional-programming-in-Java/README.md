@@ -287,9 +287,8 @@ names.stream().filter(n -> n.getSex() == 0)
 
 java.util.function パッケージやStream API については、別記事でまとめたいと思います。
 
-★参考文献
-[6][徹底攻略 Java SE 8 Gold 問題集](https://www.amazon.co.jp/徹底攻略-Java-Gold-問題集-1Z0-809/dp/4295000035/ref=sr_1_2?s=books&ie=UTF8&qid=1538986245&sr=1-2&keywords=java+gold+se8
-)
+★参考文献  
+[6][徹底攻略 Java SE 8 Gold 問題集](https://www.amazon.co.jp/徹底攻略-Java-Gold-問題集-1Z0-809/dp/4295000035/ref=sr_1_2?s=books&ie=UTF8&qid=1538986245&sr=1-2&keywords=java+gold+se8)  
 [7][Java8のラムダ式を理解する](https://qiita.com/sano1202/items/64593e8e981e8d6439d3)
 
 ## まとめ
