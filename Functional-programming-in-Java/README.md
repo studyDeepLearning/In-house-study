@@ -197,7 +197,8 @@ public interface Example {
 どこが関数っぽいの？と感じたのではないでしょうか。  
 まあまあ、それは使ってみればわかるってことで、実際にプログラムを書いてみましょう。
 
-メソッドの引数に関数オブジェクト（関数型インターフェース）を渡す場合、「**匿名内部クラス**」の書き方を用います。
+メソッドの引数に関数オブジェクト（関数型インターフェース）を渡す場合、「**匿名内部クラス**」の書き方を用います。  
+匿名内部クラスについて詳しくは文献[[4]](https://java.keicode.com/lang/anonymous-inner-class.php)を参照ください。
 
 ```java
 // 関数型インターフェース
@@ -234,9 +235,10 @@ print(3, 4, new Calc() {
 
 そうなんです。ここで満を持して『**ラムダ式**』が登場するわけなんです。
 
-★参考文献  
-[4] [Java8 ラムダ式入門](https://gist.github.com/asufana/8310422)  
-[5] [関数型インターフェース -カスタム関数型インターフェースを作成する方法を学び、可能な場合は常に組み込み関数型インターフェースを使うべき理由を学ぶ-](https://www.ibm.com/developerworks/jp/java/library/j-java8idioms7/index.html)
+★参考文献 
+[4] [匿名内部クラス](https://java.keicode.com/lang/anonymous-inner-class.php)  
+[5] [Java8 ラムダ式入門](https://gist.github.com/asufana/8310422)  
+[6] [関数型インターフェース -カスタム関数型インターフェースを作成する方法を学び、可能な場合は常に組み込み関数型インターフェースを使うべき理由を学ぶ-](https://www.ibm.com/developerworks/jp/java/library/j-java8idioms7/index.html)
 
 ## ラムダ式で書いてみると・・・
 ### ラムダ式とは？
@@ -279,8 +281,8 @@ names.stream().filter(n -> n.getSex() == 0)
 java.util.function パッケージやStream API については、別記事でまとめたいと思います。
 
 ★参考文献  
-[6] [徹底攻略 Java SE 8 Gold 問題集](https://www.amazon.co.jp/徹底攻略-Java-Gold-問題集-1Z0-809/dp/4295000035/ref=sr_1_2?s=books&ie=UTF8&qid=1538986245&sr=1-2&keywords=java+gold+se8)  
-[7] [Java8のラムダ式を理解する](https://qiita.com/sano1202/items/64593e8e981e8d6439d3)
+[7] [徹底攻略 Java SE 8 Gold 問題集](https://www.amazon.co.jp/徹底攻略-Java-Gold-問題集-1Z0-809/dp/4295000035/ref=sr_1_2?s=books&ie=UTF8&qid=1538986245&sr=1-2&keywords=java+gold+se8)  
+[8] [Java8のラムダ式を理解する](https://qiita.com/sano1202/items/64593e8e981e8d6439d3)
 
 ## まとめ
 関数型プログラミングにはメリットが多いのでJavaにも導入したい。
