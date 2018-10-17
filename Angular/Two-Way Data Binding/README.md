@@ -8,6 +8,8 @@ Angular が持つ特徴的な機能の1つで、Javascript のオブジェクト
 
 ## 従来の場合
 
+## Angular の場合
+
 ## scope オブジェクトとは？
 
 ## 実現方法
