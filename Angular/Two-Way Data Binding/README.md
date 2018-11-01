@@ -17,6 +17,11 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 
 例えば、butoon 要素に対するクリックというイベントに対して、id：test の属性の色を変化させたい場合、以下のような記述をします。
 
+```javascript
+$('button').on('click', function() {
+  $('#test').css('color', 'red');
+});
+```
 
 ## Angular の場合
 
