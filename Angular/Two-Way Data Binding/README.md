@@ -15,13 +15,15 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 
 イベントのハンドリングやDOM操作を素のJavascriptのみで実装するのは大きな労力が必要なため、「**JQuery**」のようなライブラリを用いるのが一般的です。
 
-例えば、butoon 要素に対するクリックというイベントに対して、id：test の属性の色を変化させたい場合、以下のような記述をします。
+例えば、button 要素に対するクリックというイベントに対して、id：test の属性の色を変化させたい場合、JQuery を用いると以下のような記述になります。
 
 ```javascript
 $('button').on('click', function() {
   $('#test').css('color', 'red');
 });
 ```
+
+
 
 ## Angular の場合
 
