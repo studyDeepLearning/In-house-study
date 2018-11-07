@@ -17,7 +17,17 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 
 例えば、button 要素に対するクリックというイベントに対して、id：test の属性の色を変化させたい場合、JQuery を用いると以下のような記述になります。
 
+```HTML
+HTML:
+
+$('button').on('click', function() {
+  $('#test').css('color', 'red');
+});
+```
+
 ```javascript
+javascript：
+
 $('button').on('click', function() {
   $('#test').css('color', 'red');
 });
@@ -28,6 +38,7 @@ $('button').on('click', function() {
 しかしながら、HTMLに都度IDを振って、監視するための処理を記述してとなるととても手間で、複雑で大きな画面になるほど、その影響は大きくなります。
 
 ## Angular の場合
+
 
 ## scope オブジェクトとは？
 
