@@ -20,9 +20,11 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 ```HTML
 HTML:
 
-$('button').on('click', function() {
-  $('#test').css('color', 'red');
-});
+<button class="test-class">test</button>
+
+<div id="test">
+ <!-- something -->
+</div>
 ```
 
 ```javascript
