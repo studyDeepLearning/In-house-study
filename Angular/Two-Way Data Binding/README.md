@@ -15,7 +15,7 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 
 イベントのハンドリングやDOM操作を素のJavascriptのみで実装するのは大きな労力が必要なため、「**JQuery**」のようなライブラリを用いるのが一般的です。
 
-例えば、はじめは'Hello, World!'とテキストが表示され、「push」ボタンをクリックすると'Goodbye, Everyone!'に変化するようなプログラムをJQueryを用いて実装してみます。（モジュールの定義やbody要素の記述などは省きます。）
+例えば、はじめは'Hello, World!'とテキストが表示され、「push」ボタンをクリックすると'Goodbye, Everyone!'に変化するようなプログラムをJQueryを用いて実装してみます。（body要素の記述などは省きます。）
 
 ```HTML
 HTML:
@@ -29,10 +29,10 @@ HTML:
 javascript：
 
 $(function() {
-  $('#message').text('Hello, World!');
-  $('#goodbye').click(function() {
-   $('#message').text('Goodbye, Everyone!');
-  })
+    $('#message').text('Hello, World!');
+    $('#goodbye').click(function() {
+        $('#message').text('Goodbye, Everyone!');
+    })
 });
 ```
 
@@ -43,6 +43,22 @@ $(function() {
 ## Angular の場合
 
 天下り的になってしまいますが、とりあえず上のプログラムをAngularを用いて実装してみると以下のようになります。
+
+```HTML
+HTML:
+<div ng-controller="NormalController">
+    <p>{{message}}></p>
+    <button ng-click="goodbye()">push</button>
+</div>
+```
+
+```javascript
+javascript：
+
+angular.module('app', []).controller('NormalController',['$scope', function($scope) { // ここら辺は定型句みたいなものです
+    
+
+```
 
 
 ## scope オブジェクトとは？
