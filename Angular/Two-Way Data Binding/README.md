@@ -15,23 +15,24 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 
 イベントのハンドリングやDOM操作を素のJavascriptのみで実装するのは大きな労力が必要なため、「**JQuery**」のようなライブラリを用いるのが一般的です。
 
-例えば、button 要素に対するクリックというイベントに対して、id：test の属性の色を変化させたい場合、JQuery を用いると以下のような記述になります。
+例えば、はじめは'Hello, World!'とテキストが表示され、「push」ボタンをクリックすると'Goodbye, Everyone!'に変化するようなプログラムをJQueryを用いて実装してみます。（モジュールの定義やbody要素の記述などは省きます。）
 
 ```HTML
 HTML:
-
-<button class="test-class">test</button>
-
-<div id="test">
- <!-- something -->
+<div>
+ <p id="message"></p>
+ <button id="goodbye">push</button>
 </div>
 ```
 
 ```javascript
 javascript：
 
-$('button').on('click', function() {
-  $('#test').css('color', 'red');
+$(function() {
+  $('#message').text('Hello, World!');
+  $('#goodbye').click(function() {
+   $('#message').text('Goodbye, Everyone!');
+  })
 });
 ```
 
@@ -40,6 +41,8 @@ $('button').on('click', function() {
 しかしながら、HTMLに都度IDを振って、監視するための処理を記述してとなるととても手間で、複雑で大きな画面になるほど、その影響は大きくなります。
 
 ## Angular の場合
+
+天下り的になってしまいますが、とりあえず上のプログラムをAngularを用いて実装してみると以下のようになります。
 
 
 ## scope オブジェクトとは？
