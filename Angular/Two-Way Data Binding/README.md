@@ -60,7 +60,7 @@ angular.module('app', []).controller('NormalController',['$scope', function($sco
 
 ```
 
-通常、cng-controllerを使ってHTMLと
+今回の例では、ng-controller を使ってテンプレートにコントローラの割り当てを行っていますが、通常はui-router を用いてルーティングの設定の一部としてコントローラの指定を行います。（その場合、テンプレート側ではng-controller を用いてコントローラの指定は行いません。）
 
 ## scope オブジェクトとは？
 
