@@ -60,6 +60,7 @@ angular.module('app', []).controller('NormalController',['$scope', function($sco
 
 ```
 
+通常、cng-controllerを使ってHTMLと
 
 ## scope オブジェクトとは？
 
