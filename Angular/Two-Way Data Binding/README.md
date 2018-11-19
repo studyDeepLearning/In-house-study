@@ -2,8 +2,8 @@
 
 [1. 双方向データバインディングって何？](#user-content-1-双方向データバインディングって何)  
 [2. 従来の場合](#user-content-2-従来の場合)  
-[3. Angular の場合](#user-content-3-Angular-の場合)  
-[4. Scope オブジェクトとは？](#user-content-4-Scope-オブジェクトとは)  
+[3. Angular の場合](#user-content-3-angular-の場合)  
+[4. Scope オブジェクトとは？](#user-content-4-scope-オブジェクトとは)  
 [5. 実現方法](#user-content-5-実現方法)
 
 
