@@ -251,7 +251,7 @@ print(3, 4, new Calc() {
 
 ③最後に、引数の型も型推論によって自明であり、メソッドのブロック（{ }）を省略すると return キーワードも省略できます（記述不可）。
 
-<img src="https://user-images.githubusercontent.com/28583094/48968700-82504900-f036-11e8-90ea-8c93395ef3e2.png" height="200px">
+<img src="https://user-images.githubusercontent.com/28583094/48968860-ce03f200-f038-11e8-9299-69ac6d0fccdb.png" height="200px">
 
 以上を踏まえると、上記した print メソッドの呼び出しは以下のように書き換えることができます。
 
