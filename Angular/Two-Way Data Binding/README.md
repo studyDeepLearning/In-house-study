@@ -26,6 +26,7 @@ AngularJS<sup>[※1](#ref1)</sup> （以降はAngular）が持つ特徴的な機
 
 ```HTML
 HTML:
+
 <div>
  <p id="message"></p>
  <button id="goodbye">push</button>
@@ -53,6 +54,7 @@ $(function() {
 
 ```HTML
 HTML:
+
 <div ng-controller="NormalController">
     <p>{{message}}></p>
     <button ng-click="goodbye()">push</button>
