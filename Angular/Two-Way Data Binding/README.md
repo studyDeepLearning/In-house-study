@@ -67,7 +67,7 @@ javascript：
 angular.module('app', []).controller('NormalController',['$scope', function($scope) { // ここら辺は定型句みたいなものです
     $scope.message = 'Hello, World!';
     $scope.goodbye = function () {
-        $scope.message = 'Gppdbye, Everyone!';
+        $scope.message = 'Goodbye, Everyone!';
     }
 }]);
 ```
