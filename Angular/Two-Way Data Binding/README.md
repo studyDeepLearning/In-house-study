@@ -95,7 +95,7 @@ Scope が保持するプロパティは**内容の変更がAngular によって�
 
 ![scope_1](https://user-images.githubusercontent.com/28583094/48980626-ec3c2180-f10e-11e8-9fb8-55cc1de6a00a.png)
 
-コントローラでセットアップされたScope オブジェクトはmessage プロパティとgoodbye 関数を保持します。初期表示のタイミングではコントローラにてmessage 変数に'Hello, World!' が定義され、その設定がScope のmessage プロパティに反映され、最終的にテンプレートのmessage が更新されて画面上に「Hello, World!」が表示されます。
+コントローラでセットアップされたScope オブジェクトはmessage プロパティとgoodbye 関数を保持します。初期表示のタイミングではコントローラにてmessage 変数に'Hello, World!' が定義され、その設定がScope のmessage プロパティに反映し、最終的にテンプレートのmessage が更新されて画面上に「Hello, World!」が表示されます。
 
 テンプレートのpush ボタンを押下すると、イメージ図は以下のように変化します。
 
