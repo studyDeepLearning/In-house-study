@@ -101,7 +101,8 @@ Scope が保持するプロパティは**内容の変更がAngular によって�
 
 ![scope_2](https://user-images.githubusercontent.com/28583094/48980797-0e36a380-f111-11e8-89d1-7611bb1e7218.png)
 
-push ボタンをクリックすると
+push ボタンをクリックするとScope に登録されているgoodbye 関数が呼び出されます。goodbye 関数はコントローラのmessage 変数の値を'Goodbye, Everyone!' に変更するため、Scope のmessage プロパティ、そしてテンプレートのmessage まで反映されて、画面には「Goodbye, Everyone!」が表示されます。
+
 <a name="ref2"></a>※2 MVCモデルにおけるコントローラは、あくまでDOM 操作に対する処理を記述するもので、ビジネスロジックに相当する処理はModel で作成されるべきであり、それはAngularにおけるコントローラモジュールにおいても同様です。
 つまり、コントローラではScope のセットアップ処理に注力し、肥大化を防ぐことでテスタビリティやメンテナンス性を損なわないようにすることが理想的です。
 ## 5. 実現方法
