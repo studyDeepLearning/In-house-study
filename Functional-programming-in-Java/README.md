@@ -139,6 +139,9 @@ public int addAll(int[] ary) {
 
     return total;
 }
+
+System.out.println(addAll(ary));
+
 ```
 となります。ループ処理を記述しているので、コードが少し長くなってしまいました。
 
