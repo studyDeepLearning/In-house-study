@@ -127,12 +127,10 @@ foldl という関数の第1引数に(+) 関数が渡されています。第2�
 
 ```java
 
-int[] ary = {1, 3, 5, 7, 9};
-    
-public int addAll(int[] ary) {
-    
+public static int addAll(int[] ary) {
+
     int total = 0;
-    
+
     for (int i : ary) {
         total += i;
     }
@@ -140,7 +138,10 @@ public int addAll(int[] ary) {
     return total;
 }
 
-System.out.println(addAll(ary));
+public static void main(String[] args) {
+    int[] ary = { 1, 3, 5, 7, 9 };
+    System.out.println(addAll(ary));
+}
 
 ```
 となります。ループ処理を記述しているので、コードが少し長くなってしまいました。
