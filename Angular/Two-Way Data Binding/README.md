@@ -110,3 +110,18 @@ push ボタンをクリックするとScope に登録されているgoodbye 関�
 #HTMLにはテキストボックスと保存ボタンを用意  
 #挙動は初期表示でサーバから取得した文字列をテキストボックスに表示し、手入力で書き換えた内容を保存ボタンを押下してコミットする  
 #ui-routerの記述から解説
+
+```HTML
+HTML:
+
+<div>
+    <input type="text" ng-model="message" />
+    <button ng-click="save()">保存</button>
+</div>
+```
+
+```javascript
+javascript(ui-router)：
+
+
+```
