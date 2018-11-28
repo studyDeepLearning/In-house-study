@@ -10,3 +10,6 @@
 
 - Object-oriented programming
   - Polymorphism: ポリモーフィズムについてのまとめ
+  
+- Other
+  - VScode_markdown: markdownで議事録を取る際に使えるVScodeのコードスニペットについて
