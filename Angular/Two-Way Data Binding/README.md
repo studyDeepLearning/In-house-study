@@ -121,7 +121,7 @@ HTML:
 ```
 
 ```javascript
-javascript(ui-router)：
+ui-router：
 
 
 ```
