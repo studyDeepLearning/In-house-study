@@ -124,7 +124,7 @@ HTML:
 ui-router：
 
 $stateProvider.state('frame.Frame', {
-    url: '^/hoge',
+    url: '/hoge',
     templateUrl: 'hoge/fuga.html',
     controller: 'HogeController',
     controllerAs: 'hoge'
