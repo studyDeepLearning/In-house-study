@@ -115,8 +115,8 @@ push ボタンをクリックするとScope に登録されているgoodbye 関�
 HTML:
 
 <div>
-    <input type="text" ng-model="message" />
-    <button ng-click="save()">保存</button>
+    <input type="text" ng-model="hoge.message" />
+    <button ng-click="hoge.save()">保存</button>
 </div>
 ```
 
@@ -129,4 +129,12 @@ $stateProvider.state('frame.Frame', {
     controller: 'HogeController',
     controllerAs: 'hoge'
 })
+```
+
+```javascript
+controller：
+
+angular.module('app', []).controller('HogeController',['$scope', function($scope) {
+    this.message = 'Hello, World!';
+}]);
 ```
