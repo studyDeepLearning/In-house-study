@@ -134,7 +134,16 @@ $stateProvider.state('frame.Frame', {
 ```javascript
 controller：
 
-angular.module('app', []).controller('HogeController',['$scope', function($scope) {
-    this.message = 'Hello, World!';
-}]);
+angular.module('app', []).controller('HogeController', HogeController);
+
+HogeController.$inject = ['$scope',
+    'HogeService'
+];
+
+function HogeController($scope,
+    HogeService
+) {
+
+}
+
 ```
