@@ -163,4 +163,5 @@ function HogeController($scope,
 ```
 
 まずは3節の記述方法から変わった点について説明します。
+
 **① ng-controller の記述がない**
