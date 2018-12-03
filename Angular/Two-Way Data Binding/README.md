@@ -153,6 +153,7 @@ function HogeController($scope,
     }
     
     function save() {
+        // 引数の値をDBに登録するための関数
         HogeService.save(this.message);
     }
 }
