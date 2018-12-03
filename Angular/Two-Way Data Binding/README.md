@@ -144,6 +144,17 @@ function HogeController($scope,
     HogeService
 ) {
 
+    init();
+    
+    function init() {
+        // Scope に変数と関数を登録
+        this.message = HogeService.getMessage();
+        this.save = save;
+    }
+    
+    function save() {
+        HogeService.save(this.message);
+    }
 }
 
 ```
