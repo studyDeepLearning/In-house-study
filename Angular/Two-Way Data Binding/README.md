@@ -175,7 +175,10 @@ function HogeController($scope,
 
 今回の例では、テンプレートに対して「HogeController」を紐付けて、「HogeController」には「hoge」という別名をつけています。したがって、テンプレートからは「hoge.[プロパティ名]」とすることで参照しているわけです。
 
+**②コントローラに$scope の記述がない**
 
 
-[SPA・ルーティングについて](https://qiita.com/Yamamoto0525/items/e870713d9d05d2d36a80)
+
+
+[SPA・ルーティングについて](https://qiita.com/Yamamoto0525/items/e870713d9d05d2d36a80)  
 [DIについて](https://docs.angularjs.org/guide/di)
