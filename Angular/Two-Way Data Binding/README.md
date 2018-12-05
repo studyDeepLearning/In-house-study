@@ -139,11 +139,11 @@ controller：
 angular.module('app', []).controller('HogeController', HogeController);
 
 // $injectを用いてDIを行う
-HogeController.$inject = ['$scope',
+HogeController.$inject = [
     'HogeService'
 ];
 
-function HogeController($scope,
+function HogeController(
     HogeService
 ) {
 
@@ -165,20 +165,33 @@ function HogeController($scope,
 
 まずは3節の記述方法から変わった点について説明します。
 
-**①テンプレートにng-controller の記述がない**
+##### ①テンプレートにng-controller の記述がない
 
 3節ではng-controller ディレクティブを用いてテンプレートとコントローラを結び付けていましたが、今回はその記述を用いていません。どうやってテンプレートとコントローラ（Scope）を結びつけているのかを解説します。
 
-まずは、ui-router にて「**ルーティング**」の設定を行っています。ルーティングとはSPA(Single Page Application)を実装するために必要な機能で、テンプレートとURLを紐付けることができます。また、この設定の中で、テンプレートが開かれたときに**実行されるコントローラの定義**と、コントローラに**別名をつける**ことも同時に行えます。
+まずは、ui-router にて「**ルーティング**」の設定を行っています。ルーティングとはSPA(Single Page Application)を実装するために必要な機能で、テンプレートとURLを紐付けることができます<sup>[※3](#ref3)</sup>。また、この設定の中で、テンプレートが開かれたときに**実行されるコントローラの定義**と、コントローラに**別名をつける**ことも同時に行えます。
 
 「別名」をつけるためにはcontrollerAs プロパティを用います。そして、「別名」をつけたコントローラは、テンプレートの中から[オブジェクト名].[プロパティ名]と明示することで、**Scope のように参照できる**ようになります。
 
 今回の例では、テンプレートに対して「HogeController」を紐付けて、「HogeController」には「hoge」という別名をつけています。したがって、テンプレートからは「hoge.[プロパティ名]」とすることで参照しているわけです。
 
-**②コントローラに$scope の記述がない**
+##### ②コントローラに$scope の記述がない
+
+3節では、コントローラにて「$scope.[変数名]」とすることで、Scope オブジェクトにプロパティや関数を登録していましたが、今回は「this.[変数名]」という記述で登録を行っています。
+
+これは、実は①でcontrollerAs を用いてコントローラに別名を付けたと説明しましたが、その効果によってコントローラでは$scope を使わずに**this で登録が行える**ようになったんですね。
+　
+##### ③$inject を用いてサービスのDI している
+
+Angular ではコントローラで使用するサービスなどの定義は**DI** (Dependency Injection)<sup>[※4](#ref4)</sup>で行います。3節ではcontroller 関数の第二引数に['サービス名1','サービス名2'...,'コントローラ関数'] のような配列を渡すことでインジェクトしていました。
+
+今回は、コントローラー関数のみを引数に渡して、$inject を用いてコントローラにサービスをインジェクトしています。
+
+さらに、3節ではcontroller 関数の第二引数内でコントローラ関数を無名関数で定義していましたが、可読性を向上させるために、HogeController という名前で関数を定義して引数に渡しています。
 
 
+ここまでの解説を踏まえた上で、このプログラムの挙動について説明します。
 
 
-[SPA・ルーティングについて](https://qiita.com/Yamamoto0525/items/e870713d9d05d2d36a80)  
-[DIについて](https://docs.angularjs.org/guide/di)
+<a name="ref3"></a>※3 [SPA・ルーティングについて](https://qiita.com/Yamamoto0525/items/e870713d9d05d2d36a80)  
+<a name="ref4"></a>※4 [DIについて](https://docs.angularjs.org/guide/di)
