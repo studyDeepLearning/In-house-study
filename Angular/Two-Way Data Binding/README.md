@@ -113,7 +113,7 @@ push ボタンをクリックするとScope に登録されているgoodbye 関�
 コードは以下のようになります。（3節のプログラムの記述よりも、ui-router などを用いてより実践的な書き方にしています。
 
 ```HTML
-HTML:
+// templateUrl: hoge/fuga.html
 
 <div>
     <input type="text" ng-model="hoge.message" />
@@ -185,10 +185,21 @@ Angular ではコントローラで使用するサービスなどの定義は**D
 今回は、コントローラー関数のみを引数に渡して、$inject を用いてコントローラにサービスをインジェクトしています。
 
 さらに、3節ではcontroller 関数の第二引数内でコントローラ関数を無名関数で定義していましたが、可読性を向上させるために、HogeController という名前で関数を定義して引数に渡しています。
+</br>
 
-
+　
 ここまでの解説を踏まえた上で、このプログラムの挙動について説明します。
 
+まず、テンプレートfuga.hetml を開くと、HogeController のHogeController 関数が呼ばれます。
+HogeController 関数はinit 関数を呼び出し、Scope オブジェクトにmessage 変数とsave 関数を登録します。
+
+message 変数にはHogeService サービスのgetMessage 関数から取得した値が設定されます。message プロパティに値が設定されたので、テンプレートのテキストボックスには、取得してきた文字列が表示され、これで初期表示の処理は終了となります。
+
+その後、テキストボックスに表示された文字列を編集すると、フォーカスアウトされたタイミングでScope オブジェクトのmessage プロパティが更新され、コントローラのmessage 変数の値にも反映されます。
+
+最後に、保存ボタンをクリックすると、コントローラのsave 関数が呼び出され、message 変数の値、つまりテキストボックスに入力された文字列を引数に、HogeService サービスのsave 関数を呼び出します。
+
+以上が、プログラムの挙動の説明になります。
 
 <a name="ref3"></a>※3 [SPA・ルーティングについて](https://qiita.com/Yamamoto0525/items/e870713d9d05d2d36a80)  
 <a name="ref4"></a>※4 [DIについて](https://docs.angularjs.org/guide/di)
