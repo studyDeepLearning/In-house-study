@@ -7,7 +7,7 @@
 HTTP を通じてアプリケーションを扱うためのインターフェース。色々公開されている。  
 例：Twitter API, FaceBook API
 
-　参考： [Web APIとは何なのか](https://qiita.com/NagaokaKenichi/items/df4c8455ab527aeacf02)
+　　参考： [Web APIとは何なのか](https://qiita.com/NagaokaKenichi/items/df4c8455ab527aeacf02)
 
 - HTTP  
 Web サーバとWeb クライアントの間でデータの送受信を行うために用いられるプロトコル。  
@@ -21,10 +21,11 @@ RESTの原則に則って構築されたWebシステムのHTTPでの呼び出し
 ・アドレス可能性(Addressability)  
 　提供する情報がURIを通して表現できること。全ての情報はURIで表現される一意なアドレスを持っていること。  
 ・ステートレス性(Stateless)  
-　HTTPをベースにしたステートレスなクライアント/サーバプロトコルであること。セッション等の状態管理はせず、やり取りされる情報はそれ自体で完結して解釈できること。  
+　HTTPをベースにしたステートレスなクライアント/サーバプロトコルであること。セッション等の状態管理はせず、  
+　やり取りされる情報はそれ自体で完結して解釈できること。  
 などがある。
 
-　参考：[RESTful APIとは何なのか](https://qiita.com/NagaokaKenichi/items/0647c30ef596cedf4bf2)
+　　参考：[RESTful APIとは何なのか](https://qiita.com/NagaokaKenichi/items/0647c30ef596cedf4bf2)
 
 - JSON
 JavaScript Object Notation略で、XMLなどと同様のテキストベースのデータフォーマット。  
@@ -33,9 +34,11 @@ keyはユニークなので重複しないが、valueは複数持つことがで
 
 #### 余談
 ステートレスなのにログイン状態をどうやって判別しているのか？  
-→クッキーとセッションを用いている  
+→クッキーとセッションを用いている
+
 参考：[Cookieとセッションをちゃんと理解する](https://qiita.com/hththt/items/07136ad74127999df271)
 
 ※セッションはサーバ側に，クッキーはクライアント側に保存する方法なのだが、セッション管理をするための手段の1つとしてクッキーが用いられることが多い。  
 クッキーのみを使う方法とセッション管理の手段としてクッキーを使うことの区別を付ける必要がある。  
+
 参考：[セッション管理の周辺知識まとめ](https://blog.takanabe.tokyo/2014/12/05/64/)
