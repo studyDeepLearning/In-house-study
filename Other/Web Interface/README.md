@@ -15,7 +15,7 @@ Web サーバとWeb クライアントの間でデータの送受信を行うた
 　  
 リクエスト時にサーバに送信するデータはリクエストURL の末尾に付け加えたり（GET メソッド）、リクエストボディにJSONやXML形式でリクエストを含めたり（POST メソッド）する。
 
-- RESTful API
+- RESTful API  
 RESTの原則に則って構築されたWebシステムのHTTPでの呼び出しインターフェースのこと。
 原則には  
 ・アドレス可能性(Addressability)  
@@ -27,7 +27,7 @@ RESTの原則に則って構築されたWebシステムのHTTPでの呼び出し
 
 　　参考：[RESTful APIとは何なのか](https://qiita.com/NagaokaKenichi/items/0647c30ef596cedf4bf2)
 
-- JSON
+- JSON  
 JavaScript Object Notation略で、XMLなどと同様のテキストベースのデータフォーマット。  
 連想配列の形でkeyとvalueの関係を：（コロン）を用いて表す。  
 keyはユニークなので重複しないが、valueは複数持つことができる。
