@@ -3,8 +3,8 @@
 各ディレクトリのREADME.mdに内容をまとめていきます。
 
 - Angular
-  - Two-Way Data Binding：AngularJSの双方向データバインディングについてのまとめ
   - Directive: AngularJSのディレクティブについてのまとめ
+  - Two-Way Data Binding：AngularJSの双方向データバインディングについてのまとめ
 
 - Functional-programming-in-Java：関数型プログラミングがJavaに導入されるまでの経緯と使い方のまとめ
 
