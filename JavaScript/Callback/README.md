@@ -57,4 +57,4 @@ console.log('500円いただきました。');
 
 
 
-a name="ref2"></a>※ 
+<a name="ref2"></a>※ 
