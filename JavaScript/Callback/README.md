@@ -58,3 +58,5 @@ console.log('500円いただきました。');
 
 
 <a name="ref2"></a>※ 
+
+Webサービス「[JsBin](https://jsbin.com/?html,js,console)」の紹介
