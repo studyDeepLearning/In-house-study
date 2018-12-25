@@ -9,7 +9,8 @@
 - Functional-programming-in-Java：関数型プログラミングがJavaに導入されるまでの経緯と使い方のまとめ
 
 - JavaScript
-  - Callback: Callbackについてのまとめ
+  - Callback: Callback についてのまとめ
+  - Promise: 非同期処理を上手く扱うためのAPI「Promise」についてのまとめ
 
 - Object-oriented programming
   - Polymorphism: ポリモーフィズムについてのまとめ
