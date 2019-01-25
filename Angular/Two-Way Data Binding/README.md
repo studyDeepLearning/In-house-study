@@ -200,4 +200,4 @@ message 変数にはHogeService サービスのgetMessage 関数から取得し�
 以上が、プログラムの挙動の説明になります。
 
 <a name="ref3"></a>※3 [SPA・ルーティングについて](https://qiita.com/Yamamoto0525/items/e870713d9d05d2d36a80)  
-<a name="ref4"></a>※4DIについて： [Dependency Injection](https://docs.angularjs.org/guide/di)
+<a name="ref4"></a>※4 DIについて： [Dependency Injection](https://docs.angularjs.org/guide/di)
